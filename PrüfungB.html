@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Große Halle Tag 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+
+    <body class="body_kampf" style=background-image:url(pexels-photo-2440079_Kampffeld.jpeg);>
+        <header>
+            <h1>Prüfung Teil B</h1>
+            <h3>Prüffeld</h3>
+            <h3>Tonks:</h3>
+        </header>
+        <main>
+            <div id = "Boxk">
+            
+                <p>Nun Kommen wir zum praktischen Teil.</p>
+                <p>Die Aufgabe ist denkbar einfach Besiege den Gegner.</p>
+                 <input type="button" class = "button" id="start" value="Start" onclick="document.getElementById('Kampf').style='block';aus(); Kampf()";>
+
+            </div>
+
+            <div id = "Kampf" style="visibility:hidden">
+                
+                <img id = "gegner" alt="Horizontal zentriert" src = "pexels-photo-4133751_Gegner.jpeg" widt = "100%" height="300px">
+                <div id ="dadam">
+                <div id = "leben"></div>
+                <br>
+                <div id = "leben2"></div>
+                <p>___________________________</p>
+                <p>Angriffe:</p>
+                <input type="button" class = "button" id="angrif1" value="Avexi Klatschi" style= "color:rgb(91, 51, 145)" onclick="angrif1();Kampf()";>
+                <input type="button" class = "button" id="angrif2" value="Inflexicaput" style= "color:rgb(91, 51, 145)" onclick="angrif2();Kampf()";>
+                <p>___________________________</p>
+                <input type="button" class = "button" id="gegnerk" value="Angriff Gegner" disabled="disabled" style= "color:rgb(124, 11, 11)" onclick="gegnerk();Kampf()";>
+
+
+                </div> 
+
+            </div>
+            <div id= "endekampf" style="visibility:hidden">
+                <div id = ausgang></div>
+                <p>___________________________</p>
+                <p>Der Kampf ist zu Ende. Begeben Sie sich bitte zur Abschlussfeier. </p>
+                <a href = "Abschluss.html" traget="_blank"  onclick="speicher(); speicher2()";>Abschlussfeier</a>
+
+            </div>
+        
+    </main>
+    </body>
+    <script>
+        console.log(localStorage.getItem("transfer"));
+        var Eingabetemp = localStorage.getItem("transfer");
+        var Eingabe = JSON.parse(Eingabetemp);
+        wissen=Eingabe[0];
+        //document.write(wissen);
+        console.log(localStorage.getItem("transfer2"));
+        var Eingabetemp2 = localStorage.getItem("transfer2");
+        var Eingabe2 = JSON.parse(Eingabetemp2);
+        init=Eingabe2[0];
+        //document.write(init);
+    
+    </script>
+    <footer>
+
+    </footer>
+
+
+
+</html>

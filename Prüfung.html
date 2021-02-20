@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prüfung</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+
+    <body id = "abschluss" style=background-image:url(pexels-photo-172286_Tisch.jpeg);>
+        <header>
+            <h1>Freitag Prüfungsteil A</h1>
+            <h3>Große Halle</h3>
+            <h3>Tonks:</h3>
+        </header>
+        <main class = "abschluss">
+            <div id = "tobx">
+                <p>Keine Bananen und kein Spicken.<br>
+                <b>Viel Erfolg!!</b>
+                </p>
+                <br><br>
+                <form method = "post" enctype="multipart/form-data" style=background-image:url(pexels-photo-235985_Papier.jpeg);>
+                    <div class = "teilA">
+                        <h2>Schriftlicher Teil der Zaubererprüfung</h2>
+                    </div>
+                    <div id = "wichtig">
+                    <p><b>Um abzugeben müssen alle Felder ausgefüllt sein!</b></p>
+                    </div>
+                    <label>
+                        <br>Der Name des Prüflings<br>
+
+                        <select id="*4" name="*4"required>
+                            <option>Bitte wählen Sie eine Anrede</option>
+                            <option>Frau</option>
+                            <option>Mann</option>
+                            <option>Alles Andere nur nicht die beiden Oberen</option>
+                        </select>
+                        <br><br>
+                    </label>
+                    <input type="text"  id="name" name="name" placeholder="magischer Name" required >
+                    <br>
+                    <label><br> Heutiges Datum:<br><br>
+                        <input type="date"required>
+                    </label>
+                    <br><br>
+                    <div id = "wichtig">
+                    <p><b>Drage bitte nur die Kleinbuchstaben: a,b und c ein!</b></p>
+                     
+                     </div>
+                    <br><br>
+                    <label>Frage 1: Besitzt ein Zauberstab Magie?<br><br>
+                            <label>a: Ja<br>
+                            <label>b: Nein<br>
+                            <label>c: Vieleicht<br>
+                            <input id="wahl1" name = "wahl1" value = ""required>
+                        <br><br>
+                        <label>Frage 2: Welcher Zauber erhält einen Raum?<br><br>
+                                <label>a: Nox<br>
+                                <label>b: Lumos<br>
+                                <label>c: Locomotor<br>
+                                <input id="wahl2" name = "wahl2" value = "" required>
+                            <br><br>
+                        <label>Frage 3: Welches Geschöpf wird in die Kategorie XXXXX eingestuft?<br><br>
+                                <label>a: Flubberwurm<br>
+                                <label>b: Drachen<br>
+                                <label>c: Niffler<br>
+                                <input id="wahl3" name = "wahl3" value = "" required>
+                                <br><br>
+                        <label>Frage 4: Wann verwandelt sich ein Werwolf?<br><br>
+                                <label>a: in der Mittagssonne<br>
+                                <label>b: bei Sonnenfinsternis<br>
+                                <label>c: bei Vollmond <br>
+                                <input id="wahl4" name = "wahl4" value = "" required>
+                                <br><br>
+                        <label>Frage 5: Welcher Zauber ist ein Angriffszauber?<br><br>
+                                <label>a: Avexi Kaltsch<br>
+                                <label>b: Wingardium Leviosa<br>
+                                <label>c: Silencio<br>
+                                <input id="wahl5" name = "wahl5" value = "" required>
+                                <br><br>
+                        <input type="button" class = "button" id="buttonP" value="Abgabe" onclick="prüfung();speicher(); speicher2(); prüfungb()";>
+                        <br>
+                
+
+                
+                </form>
+    
+
+            </div>
+           
+    </main>
+    <script>
+
+
+
+        console.log(localStorage.getItem("transfer"));
+        var Eingabetemp = localStorage.getItem("transfer");
+        var Eingabe = JSON.parse(Eingabetemp);
+        wissen=Eingabe[0];
+        //document.write(wissen);
+       
+    
+    </script>
+    </body>
+
+    <footer>
+
+    </footer>
+
+
+
+</html>

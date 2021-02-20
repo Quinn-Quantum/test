@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stunde 2 Tag 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+
+    <body id="body_index" style=background-image:url(pexels-photo-1083515_Cava.jpeg);>
+        <header>
+            <h1>Alltagszauber bei Professor Cava</h1>
+            <h3>A1</h3>
+            <h3>Professor Cava:</h3>
+        </header>
+        <main>
+        <div id = "Box1">
+            
+            <div id="cfrage1" style="visibility:visible">
+                <p>Wir stellen uns jetzt mal vor, dort hinten würde ein kleines Feuer zündeln. Mit welchem Zauberspruch könnt Ihr es löschen?</p>
+                <input type="button" value="Antwort" onclick="document.getElementById('probe2').style='block';" alt="" border="" id ="an2"/>
+                <div id="probe2" style="visibility:hidden" >
+                    
+                    <form>
+                        <fieldset>
+                          <input type="radio" id="mc" name="Zauberspruch" value="Aguamenti" onclick="document.getElementById('cfrage2').style='block'; Cava_Fragew()";>
+                          <label for="mc"> Aguamenti</label> 
+
+                          <input type="radio" id="vi" name="Zauberspruch" value="Lux" onclick="document.getElementById('cfrage2').style='block'; Cava_Fragef()";>
+                          <label for="vi"> Lux</label>
+
+                          <input type="radio" id="ae" name="Zauberspruch" value="Anapneo" onclick="document.getElementById('cfrage2').style='block'; Cava_Fragef()"; >
+                          <label for="ae"> Anapneo</label> 
+
+                        </fieldset>
+                </div>
+            </div>
+
+            <div id="cfrage2" style="visibility:hidden">
+                <span id="Cava_Antwort"></span>
+                <fieldset>
+                    <p>Ok, und was tun Sie, wenn sich ein Begleiter eine kleine Verletzung zugezugen hat?</p>
+                    <input type="radio" id="mc2" name="Zauberspruch" value="Diffindo" onclick="document.getElementById('cfrage3').style='block'; Cava_Fragef2()";
+                    >
+                    <label for="mc2"> Diffindo</label> 
+                    <input type="radio" id="vi2" name="Zauberspruch" value="Episkey" onclick="document.getElementById('cfrage3').style='block'; Cava_Fragew2()";>
+                    <label for="vi2"> Episkey</label>
+
+                    <input type="radio" id="ae2" name="Zauberspruch" value="Defodio" onclick="document.getElementById('cfrage3s').style='block'; Cava_Fragef2()";>
+                    <label for="ae2"> Defodio</label> 
+                  </fieldset>
+            </div>
+
+            <div id="cfrage3" style="visibility:hidden">
+                <span id="Cava2_Antwort"></span>
+                <fieldset>
+                    <p>Letzte Frage für diese Stunde. Bei welchem Zauber sollte man unbedingt besondere Vorsicht walten lassen im Wald?</p>
+                    <input type="radio" id="mc3" name="Zauberspruch" value="Impervius" onclick="document.getElementById('endestunde2').style='block'; Cava_Fragef3()";>
+                    <label for="mc3"> Impervius</label> 
+
+                    <input type="radio" id="vi3" name="Zauberspruch" value="Lumos" onclick="document.getElementById('endestunde2').style='block'; Cava_Fragef3()";>
+                    <label for="vi3"> Lumos</label>
+
+                    <input type="radio" id="ae3" name="Zauberspruch" value="Incendio" onclick="document.getElementById('endestunde2').style='block'; Cava_Fragew3()";>
+                    <label for="ae3"> Incendio</label> 
+                  </fieldset>
+            </div>
+            <div id = endestunde2 style="visibility:hidden" >
+                <span id="Cava3_Antwort"></span>
+                <br><br>
+
+                <a href = "Kräuterkunde.html" traget="_blank" onclick="speicher()">zum nächsten Tag</a>
+            </div>
+            
+        </div>
+        <script>
+
+            console.log(localStorage.getItem("transfer"));
+            var Eingabetemp = localStorage.getItem("transfer");
+            var Eingabe = JSON.parse(Eingabetemp);
+            wissen=Eingabe[0];
+            //document.write(wissen);
+           
+        
+        </script>
+    </main>
+    </body>
+
+    <footer>
+
+    </footer>
+    
+
+</html>

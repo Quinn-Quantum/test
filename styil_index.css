@@ -1,0 +1,126 @@
+body{
+    text-align: left;
+    line-height:1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.abschluss{
+  max-width: 650px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+}
+
+main{
+  
+  max-width: 1400px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+}
+#dadam{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+#gegner{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1{
+  text-align: center;
+  margin-bottom: 3%;
+}
+h3{
+  text-align:left;
+  margin-left: 10%
+}
+p{
+  text-align:left;
+  margin-left: 5%
+}
+input{
+  text-align:left;
+  margin-left: 7%
+}
+
+form{
+padding: 1%;
+margin-top: 0,5%;
+border-radius: 5px;
+padding-bottom: 2%;
+}
+
+.teilA{
+  padding: 1%;
+  margin-top:0,5%;
+  border-radius: 5px;
+}
+#wichtig{
+color: rgb(185, 31, 31);
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+    padding: 16px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #leben{
+    border-color: green;
+    background-color:white;
+    border-width: 5px;
+    width: 10em;
+    border-style: solid;
+  }
+
+
+  #leben2{
+    border-color: rgb(109, 35, 6);
+    background-color:white;
+    border-width: 5px;
+    width: 10em;
+    border-style: solid;
+  }
+  .button{
+   background-color:rgb(252, 251, 251);
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .button:disabled{
+    background-color:rgb(185, 185, 185);
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+  }
+  
+  

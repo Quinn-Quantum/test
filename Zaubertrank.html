@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zaubertrank</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+   
+
+    <body id="body_index" style=background-image:url(pexels-photo-1416572_Trank.jpeg);>
+        <head>
+            <h1>Zaubertrankkunde bei Professor Willwill</h1>
+            <h3>Garten</h3>
+            <h3>Professor Willwill:</h3>
+        </head>
+        <main></main>
+        <dif id = "trank">
+        
+            
+
+            <div id = "hi">
+                <p>Guuten Nachmittag, heute wollen wir den Zaubertrank <i>Wundheiltrank</i> brauen. Zuerst nennen Sie mir aber bitte die Zutaten in korrekter Reinfolge.</p>
+
+                <p>1. Zutat</p>
+                <input type="text" id="textfeld" value="">
+                <br>
+                <p>2. Zutat</p>
+                <input type="text" id="textfeld2" value="">
+                <br>
+                <p>3. Zutat</p>
+                <input type="text" id="textfeld3" value="">
+                <br><br>
+                <input type="button" class="button" id="kontrolle" value="Antwort abschicken" style= "color:rgb(40, 133, 52)" onclick="document.getElementById('zauberfrage').style='block'; kontrolle()";>
+            </div>
+
+            <div id = "zauberfrage" style="visibility:hidden">
+                <span id="lösung" ></span>
+                <fieldset>
+                    <p>Aber nur wenn Sie mir den richtigen Zauberspruch nennen können.</p>
+                    <input type="radio" id="m" name="Zauberspruch1" value="Impo lao torso" style= "color:rgb(40, 133, 52)" onclick="document.getElementById('i').style='block'; zauberf()";>
+                    <label for="m"> Impo lao torso</label> 
+
+                    <input type="radio" id="v" name="Zauberspruch1" value="Lumo rühre topfo" style= "color:rgb(40, 133, 52)" onclick="document.getElementById('i').style='block'; zauberf()";>
+                    <label for="v"> Lumo rühre topfo</label>
+
+                    <input type="radio" id="a" name="Zauberspruch1" value="Potio vulnus sanitatem  " style= "color:rgb(40, 133, 52)" onclick="document.getElementById('i').style='block';zauber()";>
+                    <label for="a">Potio vulnus sanitatem  </label> 
+                  </fieldset>
+            </div>
+            
+                
+            <div id="i" style="visibility:hidden"> 
+                <span id="Antwort_1" ></span>
+                <p>Du Hast den Zaubertrank erfolgreich gebraut.</p>
+                <a href = "Prüfung.html" traget="_blank" onclick="speicher()">Nächster Tag</a>
+            </div>
+        </dif>
+        <script>
+
+            console.log(localStorage.getItem("transfer"));
+            var Eingabetemp = localStorage.getItem("transfer");
+            var Eingabe = JSON.parse(Eingabetemp);
+            wissen=Eingabe[0];
+            //document.write(wissen);
+           
+        
+        </script>
+    </main>  
+    <script>
+
+        console.log(localStorage.getItem("transfer"));
+        var Eingabetemp = localStorage.getItem("transfer");
+        var Eingabe = JSON.parse(Eingabetemp);
+        wissen=Eingabe[0];
+        //document.write(wissen);
+       
+    
+    </script>
+       
+    </body>
+
+    <footer>
+
+    </footer>
+
+
+
+</html>

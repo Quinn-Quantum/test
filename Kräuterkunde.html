@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stunde 1 Tage 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+
+    <body id="body_index" style=background-image:url(pexels-photo-3779471_Gewächshaus.jpeg);>
+      <header>
+          <h1>Kräuterkunde bei Professor McLav</h1>
+            <h3>Gewächshaus</h3>
+            <h3>Professor McLav:</h3>
+      </header>
+      <main>
+        <div id = "kraut">
+            
+            <p>Guten Morgen liebe Schüler! Heute befassen wir uns mit Heilkräutern.<br>
+            Viel Spaß mit den heutigen Pflanzen.
+            </p>
+            <img src = "pexels-photo-837275_Kamille.jpeg" widt = "100%" height="300px">
+            <img src = "pexels-photo-214165_Minze.jpeg" widt = "60%" height="300px"> 
+            <img src = "pexels-photo-701775_Himbeere.jpeg" widt = "60%" height="300px"> 
+            <br>
+            
+                <div class="dropdown" >
+                    <p>Kamille</p>
+                  <div class="dropdown-content">
+                    <p>Die Kammile Blühte wird eingesetzt als Entzündungshemmer, zur Krampflösung, gegen Blähungen und als Magenmittel. Sie hat ebenfalls desodorierende und bakterienhemmende Wirkung. Man kann zum Beispiel den Wundheiltrank daraus brauen, mit Zuhilfename des Zauberspruches <i>Potio vulnus sanitatem   </i></p>
+                  </div>
+                </div>
+
+                <canvas id="leinwand" width="200" height="3"></canvas>
+
+                <div class="dropdown" >
+                    <p>Pfefferminze </p>
+                  <div class="dropdown-content">
+                    <p>Pfefferminze wirkt anregend auf Gallenfluss und Gallensaftproduktion, krampflösend bei Beschwerden im Magen-Darm-Bereich, antimikrobiell und antiviral. Man kann zum Beispiel den Wundheiltrank daraus brauen, mit Zuhilfename des Zauberspruches <i>Potio vulnus sanitatem  </i></p>
+                  </div>
+                </div>
+                <canvas id="leinwand" width="250" height="3"></canvas>
+                <div class="dropdown" >
+                    <p>Himbeere </p>
+                  <div class="dropdown-content">
+                    <p>Aufgrund ihres geringen Zuckergehaltes sind Himbeeren besonders kalorienarm. Zudem schmeckt der Zaubertrank dann nicht so bitter.</p>
+                  </div>
+                </div>
+
+        </div>
+        <div  style = "visibility:hidden" >
+            <p>Kamilleblablablabla</p>
+        </div>
+        <div  style = "visibility:hidden" >
+            <p>Kamilleblablablabla</p>
+        </div>
+        <div  style = "visibility:hidden" >
+            <p>Kamilleblablablabla</p>
+        </div>
+        <div  style = "visibility:hidden" >
+            <p>Kamilleblablablabla</p>
+        </div>
+
+        <div> <a href = "Zaubertrank.html" traget="_blank" onclick="speicher()">Nächste Stunde</a></div>
+      </main>  
+    </body>
+    <script>
+
+        console.log(localStorage.getItem("transfer"));
+        var Eingabetemp = localStorage.getItem("transfer");
+        var Eingabe = JSON.parse(Eingabetemp);
+        wissen=Eingabe[0];
+        //document.write(wissen);
+       
+    
+    </script>
+    <footer>
+
+    </footer>
+</html>

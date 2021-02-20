@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Große Halle</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+        
+    </head>
+
+    <body id="body_index" style=background-image:url(pexels-photo-382297_Feier.jpeg);>
+        <header>
+            <h1>Freitag</h1>
+            <h3>Große Halle</h3>
+            <h3>Tonks:</h3>
+        </header>
+        <main>
+            <div id = "Box3">
+            
+                <p>Ich wünsche allen Zauberern und Hexen erholsame Ferien.
+                </p>
+                <input type="button" class = "butten" id ="hatschii" value="Auswertung" onclick="auswertung()";>
+                <div id ="wissen"></div>
+                <div id ="init"></div>
+                 
+
+            </div>
+    </main>
+    </body>
+    <script>
+        console.log(localStorage.getItem("transfer"));
+        var Eingabetemp = localStorage.getItem("transfer");
+        var Eingabe = JSON.parse(Eingabetemp);
+        wissen=Eingabe[0];
+        //document.write(wissen);
+
+        console.log(localStorage.getItem("transfer2"));
+        var Eingabetemp2 = localStorage.getItem("transfer2");
+        var Eingabe2 = JSON.parse(Eingabetemp2);
+        init=Eingabe2[0];
+        //document.write(init);
+
+        
+
+        
+    </script>
+    <footer>
+
+    </footer>
+
+
+
+</html>

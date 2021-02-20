@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stunde 1 Tag 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styil_index.css">
+        <script type="text/javascript" src="JS_Sammlung.js"></script>
+    </head>
+
+    <body id="body_Fu" style=background-image:url(pexels-photo-2447040_Fu.jpeg);>
+        <header>
+            <h1>Grundlagen der Magie bei Professor Chai Fu</h1>
+            <h3>Raum 245</h3>
+            <h3>Professor FU:</h3>
+        </header>
+        <main>
+        <div id = "Box2">
+            
+            <p>Die Elemente bilden die Bausteine der gesamten Welt. Sie sind die Grundlagen alles Weltlichen und Greifbaren.
+                <br>
+                An ihrer Zahl sind es fünf und ihrer korrekten Reihenfolge nach der Elementartheorie ist ...
+            </p>
+            <input type="button" value="Antwort" onclick="document.getElementById('probe').style='block';" alt="" border="" id ="an"/>
+            <div id="probe" style="visibility:hidden" >
+                <input type="button" class = "button" value = "Feuer, Wasser, Luft, Erde, Äther" style= "color:rgb(35, 133, 158)" onclick="document.getElementById('schlaf').style='block';Fu_Fragef();setColor('button',blue );"/>
+
+                <input type="button" class = "button" value = "Feuer, Wasser, Erde, Luft, Äther" style= "color:rgb(35, 133, 158)" onclick="document.getElementById('schlaf').style='block';Fu_Fragew(),setColor('button', blue);">
+
+                <input type="button" class = "button" value = "Äther, Erde, Feuer, Wasser, Luft" style= "color:rgb(35, 133, 158)" onclick="document.getElementById('schlaf').style='block';Fu_Fragef(),setColor('button', blue)";/>
+            </div>
+            <span id="Fu_Antwort"></span>
+            <div id ="schlaf" style="visibility:hidden">
+                <p>Der Rest der Unterichtsstunde war so langweilig, dass du eingeschlafen bist.</p>
+                <br>
+                <a href = "Cava1.html" traget="_blank" onclick="speicher ()">zur nächsten Stunde</a>
+           </div>
+        </div>
+    </main>
+    </body>
+
+    <footer>
+        
+    </footer>
+    
+</html>    
