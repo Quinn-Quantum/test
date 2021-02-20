@@ -1,6 +1,16 @@
 var wissen=0;
 var init=0;
 
+var eigenleben = 100;
+var gegnerleben =90;
+var eigenerangrif = 45 + wissen;
+var gegnerangriff = 60-init;
+
+var pf1;
+var pf2;
+var pf3;
+var pf4;
+var pf5;
 
 function beginn(){
     window.location = "ChaiFu.html";
@@ -112,11 +122,7 @@ function kontrolle() {
         var antwortbyf = "Die Antwort ist nicht korrekt. Der Zauber lautet Potio vulnus sanitatem. Aber Sie dürfen dennoch brauen.";
         document.getElementById('Antwort_1').innerHTML=antwortbyf;
     }
-    var pf1;
-    var pf2;
-    var pf3;
-    var pf4;
-    var pf5;
+
 
     function prüfung(){
     
@@ -170,10 +176,7 @@ function speicher2 (){
 
 
     }
-    var eigenleben = 100;
-    var gegnerleben =90;
-    var eigenerangrif = 45 + wissen;
-    var gegnerangriff = 60-init;
+
 
     function Kampf(){
     
